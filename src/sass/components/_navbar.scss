@@ -1,0 +1,48 @@
+@use '../abstracts/colors' as a;
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: a.$white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: a.$gray;
+  transition: .4s;
+
+  &:hover {
+    color: a.$navy;
+  }
+}
+
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 7rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+  
+}

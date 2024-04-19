@@ -1,0 +1,8 @@
+@use '../abstracts/colors' as a;
+
+.line {
+  height: 6px;
+  width: 60px;
+  background-color: a.$sky;
+  border: none;
+}

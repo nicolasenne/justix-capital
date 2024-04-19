@@ -1,0 +1,9 @@
+@use '../abstracts/colors' as a;
+
+footer {
+  background-color: #f5f5f5;
+  padding: 5vh;
+  font-weight: 600;
+  color: a.$jet;
+  text-align: center;
+}

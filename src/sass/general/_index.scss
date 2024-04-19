@@ -1,0 +1,6 @@
+@use '../abstracts/colors' as a;
+@forward '../general/container';
+
+html {
+  scroll-behavior: smooth;
+}

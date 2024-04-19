@@ -1,0 +1,78 @@
+@use '../abstracts/colors' as a;
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  place-items: center;
+  text-wrap: balance;
+  padding-top: 15vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: a.$jet;
+  }
+  
+  p {
+    text-wrap: balance;
+    font-weight: 600;
+    line-height: 1.5;
+    color: a.$gray;
+  }
+}
+
+.main-img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 960px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content {
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .main-img {
+    height: 50vh;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+
+  .main-content {
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .main-img {
+    height: 50vh;
+    margin-top: 3rem;
+  }
+}

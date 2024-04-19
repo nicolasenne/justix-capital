@@ -1,0 +1,42 @@
+@use '../abstracts/colors' as a;
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.about-img {
+  width: 60%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+
+  p {
+    line-height: 1.8;
+    color: a.$gray;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 576px) {
+  .about {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .about-content {
+    align-items: center;
+    margin-bottom: 5rem;
+    text-align: center;
+    grid-row: 1;
+  }
+}
