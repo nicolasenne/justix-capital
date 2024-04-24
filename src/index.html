@@ -45,6 +45,7 @@
         <div class="about">
           <img class="about-img" src="assets/images/graphic.svg" alt="graphic image vector">
           <div class="about-content">
+            <h2>Sobre nós</h2>
             <hr class="line">
             <p>Com nossa missão focada em fornecer soluções financeiras ágeis, garantimos aos clientes uma maneira fácil e rápida de obter liquidez para seus recursos legais. Beneficie-se de nossa abordagem eficiente e transparente para garantir que você tenha acesso rápido ao dinheiro que lhe é devido.</p>
             <p>Entre em contato conosco hoje mesmo para saber mais sobre como podemos ajudá-lo a alcançar seus objetivos financeiros.</p>
@@ -55,13 +56,14 @@
     <!-- Contact -->
     <div class="container">
       <section class="contact" id="contact">
-        <h2>Entre em contato.</h2>
+        <h2>Entre em contato</h2>
         <hr class="line">
-        <form class="form" action="#">
-          <input type="text" placeholder="Nome">
-          <input type="email" placeholder="E-mail">
-          <input type="tel" placeholder="Telefone">
-          <textarea placeholder="Mensagem" rows="3"></textarea>
+        <form class="form" action="https://formspree.io/f/xoqgyrbd"
+        method="POST">
+          <input type="text" name="name" placeholder="Nome" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <input type="tel" name="phone" placeholder="Telefone" required>
+          <textarea name="message" placeholder="Mensagem" rows="3" required></textarea>
           <input id="form-btn" type="submit" value="Enviar">
         </form>
         </section>

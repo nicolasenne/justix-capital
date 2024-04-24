@@ -471,13 +471,14 @@ nav {
   position: fixed;
   width: 100%;
   background-color: #fff;
+  padding: 1rem 0;
+  top: 0;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
 }
 
 .logo {
