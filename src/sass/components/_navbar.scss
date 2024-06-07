@@ -21,15 +21,24 @@ nav {
 .nav-links {
   display: flex;
   gap: 2rem;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: .8rem;
 }
 
 .nav-link {
-  color: a.$gray;
+  color: a.$blue-gray;
   transition: .4s;
 
   &:hover {
     color: a.$navy;
+  }
+}
+
+.nav-contact {
+  color: a.$red;
+
+  &:hover {
+    color: a.$dark-red;
   }
 }
 

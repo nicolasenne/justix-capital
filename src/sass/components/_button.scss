@@ -1,19 +1,5 @@
 @use '../abstracts/colors' as a;
 
-.nav-btn {
-  color: a.$navy;
-  border: 1px solid a.$navy;
-  padding: 0.5rem 1.5rem;
-  border-radius: 8px;
-  transition: .4s;
-
-  &:hover {
-    color: a.$white;
-    background-color: a.$navy;
-    transition: .4s;
-  }
-}
-
 .main-btn {
   color: a.$white;
   background-color: a.$navy;
@@ -37,23 +23,57 @@
 
 #form-btn {
   color: a.$white;
-  background-color: a.$navy;
-  padding: 1rem;
+  background-color: a.$red;
+  padding: .8rem;
   width: 100%;
   font-weight: 700;
-  border-radius: 8px;
+  border-radius: 4px;
   transition: .4s;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 4px;
   border: none;
   cursor: pointer;
 
   i {
-    font-size: 1.5rem;
+    font-size: .9rem;
   }
 
   &:hover {
-    background-color: a.$sky;
+    background-color: a.$dark-red;
+  }
+}
+
+#ia-btn {
+  color: a.$white;
+  background-color: a.$red;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: .4s;
+  border: none;
+  cursor: pointer;
+  padding: .5rem .8rem;
+
+  i {
+    font-size: .9rem;
+  }
+
+  &:hover {
+    background-color: a.$dark-red;
+  }
+}
+
+.contact-btn {
+  border: 1px solid a.$white;
+  color: a.$white;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: .4s;
+
+  &:hover {
+    background-color: a.$white;
+    color: a.$navy;
   }
 }
