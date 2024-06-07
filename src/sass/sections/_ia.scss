@@ -1,0 +1,54 @@
+@use '../abstracts/colors' as a;
+
+.ia-bg {
+  background: linear-gradient(to right, #3667A6 -20%, #0B1340 45%);
+  height: 100vh;
+  color: a.$white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    font-weight: 600;
+    text-wrap: balance;
+  }
+}
+
+.ia-form {
+  background-color: a.$white;
+  display:inline-block;
+  padding: .5rem;
+  border-radius: 8px;
+  width: 50%;
+  display: flex;
+  gap: 1vw;
+
+  input {
+    flex-grow: 1;
+  }
+
+  input,
+  button {
+    background-color:transparent;
+    border:0;
+  }
+
+  input[type=text] {
+    box-sizing: border-box;
+    border: transparent;
+    outline: none;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+    transition: .3s;
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}

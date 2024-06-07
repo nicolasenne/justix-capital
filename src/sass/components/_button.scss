@@ -32,14 +32,48 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 4px;
   border: none;
   cursor: pointer;
 
   i {
-    font-size: 1.5rem;
+    font-size: .9rem;
   }
 
   &:hover {
     background-color: a.$dark-red;
+  }
+}
+
+#ia-btn {
+  color: a.$white;
+  background-color: a.$red;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: .4s;
+  border: none;
+  cursor: pointer;
+  padding: .5rem .8rem;
+
+  i {
+    font-size: .9rem;
+  }
+
+  &:hover {
+    background-color: a.$dark-red;
+  }
+}
+
+.contact-btn {
+  border: 1px solid a.$white;
+  color: a.$white;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: .4s;
+
+  &:hover {
+    background-color: a.$white;
+    color: a.$navy;
   }
 }

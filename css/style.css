@@ -437,14 +437,45 @@ ul, li {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 4px;
   border: none;
   cursor: pointer;
 }
 #form-btn i {
-  font-size: 1.5rem;
+  font-size: 0.9rem;
 }
 #form-btn:hover {
   background-color: #d11c46;
+}
+
+#ia-btn {
+  color: #fff;
+  background-color: #FD2357;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: 0.4s;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+}
+#ia-btn i {
+  font-size: 0.9rem;
+}
+#ia-btn:hover {
+  background-color: #d11c46;
+}
+
+.contact-btn {
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+.contact-btn:hover {
+  background-color: #fff;
+  color: #0B1340;
 }
 
 .line {
@@ -579,6 +610,54 @@ footer {
   margin-top: auto;
 }
 
+.ia-bg {
+  background: linear-gradient(to right, #3667A6 -20%, #0B1340 45%);
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.ia-bg p {
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+.ia-form {
+  background-color: #fff;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 8px;
+  width: 50%;
+  display: flex;
+  gap: 1vw;
+}
+.ia-form input {
+  flex-grow: 1;
+}
+.ia-form input,
+.ia-form button {
+  background-color: transparent;
+  border: 0;
+}
+.ia-form input[type=text] {
+  box-sizing: border-box;
+  border: transparent;
+  outline: none;
+}
+.ia-form input:focus::placeholder {
+  color: transparent;
+  transition: 0.3s;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
 .main-bg {
   background: linear-gradient(to right, #3667A6 -20%, #0B1340 45%);
   padding-top: 20vh;
@@ -623,7 +702,7 @@ footer {
 .main-info p {
   font-size: 0.8rem;
   font-weight: 500;
-  text-wrap: balance;
+  width: 80%;
 }
 
 .main-form {
@@ -690,6 +769,9 @@ footer {
     color: #fff;
     text-align: center;
     margin: 1rem 0 3rem;
+  }
+  .main-info p {
+    width: 100%;
   }
   .main-form {
     width: 100%;
