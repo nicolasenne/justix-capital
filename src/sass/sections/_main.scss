@@ -86,6 +86,10 @@
 }
 
 @media (max-width: 960px) {
+  .main-bg {
+    padding-top: 10vh;
+  }
+
   .main-grid {
     grid-template-columns: 1fr;
   }
@@ -106,8 +110,20 @@
   .main-info {
     color: a.$white;
     text-align: center;
+    margin: 1rem 0 3rem;
+
+    p {
+      width: 100%;
+    }
   }
 
+  .main-form {
+    width: 100%;
+
+    h2 {
+      text-align: center;
+    }
+  }
 
 }
 

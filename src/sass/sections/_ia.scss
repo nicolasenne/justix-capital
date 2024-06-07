@@ -8,11 +8,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  text-align: center;
 
   p {
     font-weight: 600;
     text-wrap: balance;
+    margin-top: 1rem;
   }
 }
 
@@ -51,4 +53,26 @@
   display: flex;
   align-items: center;
   gap: 1vw;
+}
+
+@media (max-width: 960px) {
+  .ia-form {
+    width: 90%;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 2vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .ia-form {
+    width: 90%;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 2vh;
+  }
 }

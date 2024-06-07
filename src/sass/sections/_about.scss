@@ -44,12 +44,13 @@
 }
 
 @media (max-width: 960px) {
-
+  .about-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 576px) {
   .about-content {
     grid-template-columns: 1fr;
-    margin-bottom: 5rem;
   }
 }
