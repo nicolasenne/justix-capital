@@ -21,53 +21,82 @@
           <img class="logo" src="assets/images/logo.svg" alt="justix logo">
           <ul class="nav-links">
             <li><a class="nav-link" href="#main">Início</a></li>
-            <li><a class="nav-link" href="#about">Sobre</a></li>
-            <li><a class="nav-btn" href="#contact">Contato</a></li>
+            <li><a class="nav-link" href="#about">Sobre Nós</a></li>
+            <li><a class="nav-link nav-contact" href="#contact">Contato</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Main Section -->
-    <div class="container">
-      <main id="main">
-        <div class="main-content">
-          <h1>Liberte seu potencial financeiro hoje</h1>
-          <hr class="line">
-          <p>Descubra como a Justix está simplificando o acesso ao dinheiro proveniente de processo judiciais e precatórios.</p>
-          <a class="main-btn" href="#contact">Descubra agora <i class="bi bi-arrow-right-short"></i></a>
+    <main>
+      <div class="main-bg">
+        <div class="container">
+          <div class="main-grid">
+            <div class="main-content">
+              <div class="main-title">
+                <h1>Liberte seu potencial financeiro hoje.</h1>
+                <p>A Justix leva o dinheiro na sua conta agora, sem esperar a conclusão do seu processo.</p>
+              </div>
+              <div class="main-info">
+                <div>
+                  <h3><i class="bi bi-star-fill"></i> Seus ativos, suas regras.</h3>
+                  <p>Você sabia que seu processo é um ativo financeiro e pode ser negociado?</p>
+                </div>
+                <div>
+                  <h3><i class="bi bi-shield-fill-check"></i> Plataforma 100% segura</h3>
+                  <p>Protegemos seus dados pessoais com o mais alto padrão de segurança, garantindo sua privacidade em cada etapa.</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-form">
+              <h2>Receba uma avaliação <span class="red">gratuita</span></h2>
+              <form class="form" action="https://formspree.io/f/xoqgyrbd"
+              method="POST">
+                <label for="name"><i class="bi bi-person-fill"></i> Nome</label>
+                <input type="text" name="name" required>
+                <label for="process"><i class="bi bi-card-heading"></i> Número do processo</label>
+                <input type="text" name="process" required>
+                <label for="email"><i class="bi bi-envelope"></i> E-mail</label>
+                <input type="email" name="email" required>
+                <label for="phone"><i class="bi bi-phone"></i> Telefone</label>
+                <input type="tel" name="phone" required>
+                <label for="message"><i class="bi bi-chat-quote"></i> Mensagem</label>
+                <textarea name="message" rows="3" required></textarea>
+                <input id="form-btn" type="submit" value="Enviar">
+              </form>
+            </div>
+          </div>
         </div>
-        <img class="main-img" src="assets/images/main.webp" alt="signing paper">
-      </main>
-    </div>
+      </div>
+    </main>
     <!-- About -->
     <section id="about">
       <div class="container">
         <div class="about">
-          <img class="about-img" src="assets/images/graphic.svg" alt="graphic image vector">
+          <p>QUEM SOMOS NÓS</p>
+          <h2>Inovando o ecossistema jurídico</h2>
           <div class="about-content">
-            <h2>Sobre nós</h2>
-            <hr class="line">
-            <p>Com nossa missão focada em fornecer soluções financeiras ágeis, garantimos aos clientes uma maneira fácil e rápida de obter liquidez para seus recursos legais. Beneficie-se de nossa abordagem eficiente e transparente para garantir que você tenha acesso rápido ao dinheiro que lhe é devido.</p>
-            <p>Entre em contato conosco hoje mesmo para saber mais sobre como podemos ajudá-lo a alcançar seus objetivos financeiros.</p>
+            <div class="about-card">
+              <img class="about-img" src="assets/images/about-1.svg" alt="approval">
+              <h4>Seu dinheiro mais próximo</h4>
+              <p>Possibilidade de receber seus direitos até três anos antes do que sem a Justix.</p>
+            </div>
+
+            <div class="about-card">
+              <img class="about-img" src="assets/images/about-2.svg" alt="approval">
+              <h4>Você no controle do seu processo</h4>
+              <p>A Justix te leva informações precisas em tempo real, nunca mais fique sem saber o que está acontecendo com a sua ação.</p>
+            </div>
+
+            <div class="about-card">
+              <img class="about-img" src="assets/images/about-3.svg" alt="approval">
+              <h4>Sua missão é a nossa missão</h4>
+              <p>Aqui nós nos importamos com você. Entendemos que o processo é seu e queremos defender seus interesses.</p>
+            </div>
         </div>
         </div>
       </div>
     </section>
-    <!-- Contact -->
-    <div class="container">
-      <section class="contact" id="contact">
-        <h2>Entre em contato</h2>
-        <hr class="line">
-        <form class="form" action="https://formspree.io/f/xoqgyrbd"
-        method="POST">
-          <input type="text" name="name" placeholder="Nome" required>
-          <input type="email" name="email" placeholder="E-mail" required>
-          <input type="tel" name="phone" placeholder="Telefone" required>
-          <textarea name="message" placeholder="Mensagem" rows="3" required></textarea>
-          <input id="form-btn" type="submit" value="Enviar">
-        </form>
-        </section>
-      </div>
     <!-- Footer -->
     <footer>
       <p>Justix Capital © 2024</p>
